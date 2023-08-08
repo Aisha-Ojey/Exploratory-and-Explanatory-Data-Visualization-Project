@@ -1,31 +1,46 @@
-# California Housing
+# Exploratory and Explanatory Data Visualization Project (California Housing Dataset)
 
 ## by Ojikutu Aisha
 
+### Introduction
 
-## Dataset
+This project demonstrates the significance and value of data visualization techniques in the data analysis process. The project is divided into two parts: Exploratory Data Visualization (Part I) and Explanatory Data Visualization (Part II). The primary aim is to systematically explore and analyze a selected dataset using Python visualization libraries and then create polished explanatory visualizations to communicate the findings effectively.
 
-The dataset contains 20,640 observations and 10 features. The features are listed below:
-1. longitude
-2. latitude
-3. housing_median_age (Years)
-4. total_rooms
-5. total_bedrooms
-6. population
-7. households
-8. median_income (USD)
-9. median_house_value (USD)
-10. ocean_proximity
+### Project Overview
 
-The dataset can be found [here](https://www.kaggle.com/datasets/camnugent/california-housing-prices?select=housing.csv) on the page including the data features.
+Part I - Exploratory Data Visualization
+In this part, we conducted an exploratory data analysis on a selected dataset. We used Python data science and visualization libraries such as NumPy, pandas, Matplotlib, and Seaborn to explore the dataset's variables and gain insights into its structure, patterns, and relationships. The process involved moving from simple univariate relationships to multivariate relationships, documenting our observations and questions along the way.
 
-## Summary of Findings
+Part II - Explanatory Data Visualization
+In Part II, we transformed our exploratory visualizations from Part I into polished explanatory visualizations. We created a short presentation to illustrate interesting properties, trends, and relationships discovered in the dataset. The goal was to communicate our findings effectively, ensuring design integrity in the visualizations.
 
-In my research, I discovered that there is a high positive correlation between income and house value, meaning that a household's average income is related to the worth of the home they live in. I also learned that inland homes are less expensive than those on the ocean. Regardless of age, homes near the seaside and the Bay region tend to be more expensive.
+### Dataset
 
-There were 207 empty observations was dropped in the dataset. Using the categorical feature `ocean_proximity`, most of the houses in the dataset are less than an hour to the ocean. During exploration, there is a linear relationship between the `median_income` and `median_house_value`. I also found out that `housing_median_age` does not have any relationship with `median house_value`. Another unexpected finding is that the 'median house value' as shown on the map is higher the closer the homes are near the 'ocean' or 'bay area'.
+We selected the "California Housing" dataset, which contains 20,640 observations and 10 features, including geographical and housing-related variables. The dataset's features include longitude, latitude, housing median age, total rooms, total bedrooms, population, households, median income, median house value, and ocean proximity. The dataset source can be found here.
 
-## Key Insights for Presentation
+### Summary of Findings
 
-I utilized a scatter plot to illustrate the link between "median income" and "median house value" for the presentation. The distribution of "median income," "housing median age," and "median house value" was then displayed.
-After that, I create a chart that displays the houses' spatial distribution, location, and value.
+During our exploration, we made several key observations:
+
+There is a high positive correlation between income and house value, indicating that a household's average income is related to their home's value.
+Homes near the ocean or bay area tend to be more expensive, regardless of age.
+There is a linear relationship between median income and median house value.
+Housing median age does not exhibit a strong relationship with median house value.
+Key Insights for Presentation
+For our explanatory presentation, we focused on the following insights:
+
+Illustrating the correlation between median income and median house value using a scatter plot.
+Displaying distributions of median income, housing median age, and median house value using appropriate visualizations.
+Highlighting the impact of geographical location (ocean proximity) on house values.
+How to View the Presentation
+To view the presentation slide deck, follow these steps:
+
+Convert the Part_II_slide_deck_template.ipynb notebook file to a slide deck using the provided Cell Toolbar and Slide Type assignments.
+Generate the slide deck by running the following command in the last code cell of the notebook:
+css
+Copy code
+!jupyter nbconvert Part_II_slide_deck_template.ipynb --to slides --post serve --no-input --no-prompt
+
+### Conclusion
+
+This project underscores the importance of data visualization in data analysis. Through exploratory analysis and explanatory visualization, we gained insights into relationships within the dataset. Our findings highlighted the role of factors such as income and geographical location in influencing house values. By effectively communicating these insights, we demonstrate the power of visualizations in conveying complex information.
