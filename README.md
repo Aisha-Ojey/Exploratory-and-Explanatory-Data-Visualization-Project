@@ -16,7 +16,7 @@ In Part II, we transformed our exploratory visualizations from Part I into polis
 
 ### Dataset
 
-We selected the "California Housing" dataset, which contains 20,640 observations and 10 features, including geographical and housing-related variables. The dataset's features include longitude, latitude, housing median age, total rooms, total bedrooms, population, households, median income, median house value, and ocean proximity. The dataset source can be found here.
+We selected the "California Housing" dataset, which contains 20,640 observations and 10 features, including geographical and housing-related variables. The dataset's features include longitude, latitude, housing median age, total rooms, total bedrooms, population, households, median income, median house value, and ocean proximity. The dataset source can be found [here](https://www.kaggle.com/datasets/camnugent/california-housing-prices?select=housing.csv).
 
 ### Summary of Findings
 
